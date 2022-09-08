@@ -3,7 +3,7 @@ echo "Configuring and building Thirdparty/DBoW2 ..."
 cd Thirdparty/DBoW2
 mkdir build
 cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_BUILD_TYPE=Release -D CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/
 make -j
 
 cd ../../g2o
